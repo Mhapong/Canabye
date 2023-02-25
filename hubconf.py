@@ -1,5 +1,5 @@
+'''
 # YOLOv5 🚀 by Ultralytics, GPL-3.0 license
-"""
 PyTorch Hub models https://pytorch.org/hub/ultralytics_yolov5
 
 Usage:
@@ -8,12 +8,12 @@ Usage:
     model = torch.hub.load('ultralytics/yolov5:master', 'yolov5s')  # from branch
     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5s.pt')  # custom/local model
     model = torch.hub.load('.', 'custom', 'yolov5s.pt', source='local')  # local repo
-"""
+'''
 
 import torch
 
 
-def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbose=True, device=None):
+def _create(name, pretrained=True, channels=3, classes=3, autoshape=True, verbose=True, device=None):
     """Creates or loads a YOLOv5 model
 
     Arguments:
